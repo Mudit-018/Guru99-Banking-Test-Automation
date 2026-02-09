@@ -1,0 +1,9 @@
+========================
+requirements.txt
+========================
+
+selenium
+webdriver-manager
+pytest
+openpyxl
+pandas
