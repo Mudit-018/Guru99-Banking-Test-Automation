@@ -1,0 +1,109 @@
+# Guru99 Banking Website Test Automation
+
+This project contains automated and manual test cases for the Guru99 Demo Banking website.
+
+Website under test:
+https://demo.guru99.com/V1/index.php
+
+The automation focuses on real banking workflows such as:
+
+- Login
+- Create New Customer
+- Edit Customer
+- Delete Customer
+- Create New Account
+- Edit Account
+- Delete Account
+- Balance Enquiry
+- Mini Statement
+- Fund Transfer
+- Customised Statement
+- Logout
+
+The tests are written in Python using Selenium WebDriver.
+
+---
+
+## Technologies Used
+
+- Python 3
+- Selenium WebDriver
+- WebDriver Manager
+- PyTest
+- Pandas
+- OpenPyXL
+
+---
+
+## Project Structure
+
+project/
+
+├── test/               # Test scripts  
+├── pages/              # Page Object classes  
+├── data/               # Test data files (Excel)  
+├── reports/            # Test reports  
+├── requirements.txt  
+└── README.md  
+
+---
+
+## Setup Instructions
+
+1) Clone the repository:
+
+git clone https://github.com/Mudit-018/Guru99-Banking-Test-Automation.git  
+cd Guru99-Banking-Test-Automation  
+
+2) Create and activate virtual environment:
+
+python -m venv .venv  
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  
+.\.venv\Scripts\activate  
+
+3) Install dependencies:
+
+pip install -r requirements.txt  
+
+---
+
+## Test Credentials
+
+To run the tests you must generate valid login credentials from the Guru99 demo site:
+
+https://demo.guru99.com/V1/index.php
+
+Use the "Generate Access" option on the website to get:
+
+- User ID  
+- Password  
+
+Update the credentials inside the test files before running.
+
+---
+
+## Run Tests
+
+From the project root folder:
+
+pytest  
+
+or run individual test files:
+
+python test/be_testsuite.py  
+
+---
+
+## Notes
+
+- This is a demo automation project created for learning and portfolio purposes.
+- The Guru99 site resets data frequently, so some tests may fail if records already exist.
+- Credentials must be updated regularly.
+
+---
+
+## Author
+
+Mudit Kumar  
+Computer Programming Graduate  
+Aspiring QA / Automation Tester
